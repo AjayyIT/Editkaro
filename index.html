@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in | Cinematic Video Editing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Unique Sticky Header -->
+    <nav id="navbar">
+        <div class="logo">EDITKARO.IN</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#services" class="nav-item">Services</a></li>
+            <li><a href="#portfolio" class="nav-item">Our Work</a></li>
+            <li><a href="#color-grading" class="nav-item">Color Grading</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <!-- Dynamic Neon Underline Indicator -->
+        <div id="nav-indicator"></div>
+    </nav>
+
+    <!-- Scroll Progress Line -->
+    <div id="timeline-progress"></div>
+    
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h1>EDITKARO.IN</h1>
+        <p>Cinematic Video Editing & Post-Production</p>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="slide-up">
+        <h2 style="text-align: center; margin-bottom: 30px;">OUR EXPERTISE</h2>
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>Short-Form Content</h3>
+                <p>Engaging reels and shorts optimized for high retention on TikTok, Reels, and Shorts.</p>
+            </div>
+            <div class="service-box">
+                <h3>Long-Form Videos</h3>
+                <p>Comprehensive storytelling for YouTube, documentaries, and corporate presentations.</p>
+            </div>
+            <div class="service-box">
+                <h3>Commercial Ads</h3>
+                <p>High-conversion eCommerce and brand advertisements tailored for maximum ROI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="slide-up">
+        <h2 style="text-align: center; margin-bottom: 30px;">OUR WORK</h2>
+        
+        <div class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="gaming" data-theme="theme-gaming">Gaming</button>
+            <button class="filter-btn" data-filter="football" data-theme="theme-football">Football</button>
+            <button class="filter-btn" data-filter="ecommerce" data-theme="theme-ecommerce">eCommerce</button>
+            <button class="filter-btn" data-filter="anime">Anime</button>
+            <button class="filter-btn" data-filter="documentary">Documentary</button>
+            <button class="filter-btn surprise" id="surprise-btn">Surprise Me</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+            
+            <div class="card interactive-card" data-category="gaming" data-video-src="media/videos/gaming.mp4">
+                <img class="thumbnail" src="media/thumbnails/gaming.jpg" alt="Gaming Edit">
+                <video class="hover-video" loop muted playsinline src="media/videos/gaming.mp4"></video>
+                <div class="glare"></div>
+                <div class="card-info">
+                    <h3>Valorant Montage</h3>
+                    <p>Gaming / Sync Edit</p>
+                </div>
+            </div>
+
+            <div class="card interactive-card" data-category="football" data-video-src="media/videos/football.mp4">
+                <img class="thumbnail" src="media/thumbnails/football.jpg" alt="Football Edit">
+                <video class="hover-video" loop muted playsinline src="media/videos/football.mp4"></video>
+                <div class="glare"></div>
+                <div class="card-info">
+                    <h3>UCL Highlights</h3>
+                    <p>Football / High Energy</p>
+                </div>
+            </div>
+
+            <div class="card interactive-card" data-category="ecommerce" data-video-src="media/videos/ecommerce.mp4">
+                <img class="thumbnail" src="media/thumbnails/ecommerce.jpg" alt="eCommerce Edit">
+                <video class="hover-video" loop muted playsinline src="media/videos/ecommerce.mp4"></video>
+                <div class="glare"></div>
+                <div class="card-info">
+                    <h3>Sneaker Promo</h3>
+                    <p>eCommerce / Product</p>
+                </div>
+            </div>
+
+            <div class="card interactive-card" data-category="anime" data-video-src="media/videos/anime.mp4">
+                <img class="thumbnail" src="media/thumbnails/anime.jpg" alt="Anime AMV">
+                <video class="hover-video" loop muted playsinline src="media/videos/anime.mp4"></video>
+                <div class="glare"></div>
+                <div class="card-info">
+                    <h3>JJK AMV</h3>
+                    <p>Anime / Flow</p>
+                </div>
+            </div>
+            
+            <div class="card interactive-card" data-category="documentary" data-video-src="media/videos/documentary.mp4">
+                <img class="thumbnail" src="media/thumbnails/documentary.jpg" alt="Docu Edit">
+                <video class="hover-video" loop muted playsinline src="media/videos/documentary.mp4"></video>
+                <div class="glare"></div>
+                <div class="card-info">
+                    <h3>Nature Expose</h3>
+                    <p>Documentary / Cinematic</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Color Grading Slider -->
+    <section id="color-grading" class="color-grading-section slide-up">
+        <h2>COLOR GRADING MASTERCLASS</h2>
+        <p>Drag the slider to see the raw footage transformed into a cinematic masterpiece.</p>
+        
+        <div class="ba-container" id="ba-container">
+            <img src="media/color-grading/after.jpg" class="ba-after" alt="Color Graded">
+            <img src="media/color-grading/before.jpg" class="ba-before" id="ba-before" alt="Raw LOG">
+            
+            <div class="ba-line" id="ba-line"></div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="slide-up">
+        <h2 style="text-align: center; margin-bottom: 20px;">READY TO CREATE?</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Let's discuss your next big project.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
+            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">EDITKARO.IN</div>
+            <p>&copy; 2026 Editkaro.in. All Rights Reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Licensing</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox (Local Video Frame) -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-close" id="lightbox-close">✕</div>
+        <div class="lightbox-content">
+            <video class="ambient-glow" id="ambient-video" loop muted playsinline tabindex="-1"></video>
+            <video class="main-player" id="main-video" controls playsinline></video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
