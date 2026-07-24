@@ -41,3 +41,21 @@ To ensure the media loads correctly, the local repository must maintain this exa
         ├── gaming.mp4
         ├── football.mp4
         └── ...
+🚀 Getting Started
+To run this project locally:
+
+Clone the repository:
+
+Bash
+git clone [https://github.com/yourusername/editkaro-portfolio.git](https://github.com/yourusername/editkaro-portfolio.git)
+Navigate to the project directory:
+
+Bash
+cd editkaro-portfolio
+Open index.html in your preferred web browser. (Alternatively, use an extension like VS Code Live Server for hot-reloading).
+
+👨‍💻 Author
+Ajay RS
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
